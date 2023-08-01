@@ -1,0 +1,13 @@
+.gallery-container {
+  justify-content: center;
+  align-content: center;
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "SequelSansHeadline";
+  src: url("../font/SequelSansOTF/Sequel\ Sans\ Light\ Body.otf")
+    format("opentype");
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "Begild.otf";
+  src: url("../font/SequelSansOTF/otf/Begild.otf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+.header {
+  width: 100%;
+  background: linear-gradient(currentcolor 0%, transparent 100%);
+  transform: translateZ(0px);
+  position: fixed;
+  z-index: 1;
+}
+
+.text-photo-1-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 30px;
+  line-height: 50px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "SequelSansHeadline", "sans-serif";
+  align-content: space-around;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.title2 {
+  line-height: 90px;
+  font-family: "Begild.otf";
+  font-size: 55px;
+}
+
+.text-image-1 {
+  display: flex;
+}
+
+.title-gradient {
+  color: #ff8c00;
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-emphasis-color: transparent;
+}
+
+.photo-1 img {
+  width: 550px;
+}
+
+.photo-2 img {
+  width: 500px;
+}
+
+.photo-1 img,
+.photo-2 img {
+  border-radius: 20px;
+}
+.text-photo-2-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 30px;
+  padding-top: 250px;
+  line-height: 50px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "SequelSansHeadline", "sans-serif";
+  align-content: space-around;
+}
+
+.text-image-2 {
+  display: flex;
+}
+
+.photo-2,
+.photo-1 {
+  margin: 25px;
+}
+
+.my-story {
+  font-size: 20px;
+  font-weight: bold;
+  font-size: larger;
+  font-family: "SequelSansHeadline", "sans-serif";
+  align-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-photo-1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-image-1,
+  .text-image-2 {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .text-image-2 {
+    flex-direction: column;
+  }
+
+  .title2 {
+    display: flex;
+    text-align: center;
+  }
+
+  .photo-1 img {
+    width: 300px;
+  }
+
+  .photo-2 img {
+    width: 300px;
+  }
+}

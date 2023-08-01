@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "SequelSansHeadline";
+  src: url("../font/SequelSansOTF/Sequel\ Sans\ Light\ Body.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Begild.otf";
+  src: url("../font/SequelSansOTF/otf/Begild.otf");
+  font-weight: bold;
+  font-style: bold;
+}
+
+.textGradient {
+  color: #ff8c00;
+  background: radial-gradient(
+    77.35% 538.53% at 16.63% 71.41%,
+    #fab89a 0%,
+    #9a78f5 50.05%,
+    #ed93fb 100%
+  );
+  background-size: cover;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.infinite-carousel-sx,
+.infinite-carousel-dx {
+  display: flex;
+  justify-content: space-around;
+}
+
+.animation-1 {
+  animation: scroller 40s linear infinite;
+}
+
+.animation-2 {
+  animation: scroller-2 40s linear infinite;
+  display: flex;
+}
+
+@keyframes scroller {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes scroller-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.photo-item {
+  margin-right: 60px;
+  background-size: cover;
+  border-radius: 20px;
+  background-position: center;
+  box-shadow: 0px 2px 40px rgba(0, 0, 0, 0.15);
+}
+
+.photo-item img {
+  border-radius: 20px;
+}
+
+.works-style {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.works-style h1 {
+  display: flex;
+  justify-content: center;
+  margin: 80px 80px;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Begild.otf";
+}
+
+.gallery-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-top: 150px;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+}
+
+.photos-buttons {
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  color: #fffcfc50;
+  font-family: "Begild.otf";
+  font-weight: 800;
+  cursor: pointer;
+  position: absolute;
+  margin-top: 20px;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: color;
+  letter-spacing: 3px;
+}
+
+.photos-buttons:hover,
+.photos-buttons:focus {
+  color: #fff;
+}
+
+.photos-button:focus:after,
+.photos-button:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.photos-button:after {
+  content: "";
+  pointer-events: none;
+  bottom: -2px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+
+@media only screen and (max-width: 1300px) {
+  .gallery-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-top: 150px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .gallery-container {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    margin-top: 150px;
+  }
+}
