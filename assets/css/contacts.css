@@ -1,15 +1,20 @@
 @font-face {
   font-family: "LeagueSpartan-SemiBold.ttf";
-  src: url("../font/SequelSansOTF/otf/LeagueSpartan-SemiBold.ttf")
-    format("opentype");
+  src: url("../font/SequelSansOTF/otf/LeagueSpartan-SemiBold.ttf");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Begild.otf";
   src: url("../font/SequelSansOTF/otf/Begild.otf");
   font-weight: bold;
   font-style: bold;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.946);
+  margin: 0;
 }
 
 .background-image {
@@ -50,6 +55,7 @@
 
 .phrase1 {
   margin-bottom: 50px;
+  font-family: "LeagueSpartan-SemiBold.ttf", sans-serif; /* usa un font di riserva nel caso il tuo font personalizzato non venga caricato */
 }
 
 .social-media {
@@ -63,6 +69,7 @@
   text-align: left;
   margin-top: 50px;
   line-height: 100px;
+  font-family: "LeagueSpartan-SemiBold.ttf", sans-serif; /* usa un font di riserva nel caso il tuo font personalizzato non venga caricato */
 }
 
 .login-box {
@@ -162,7 +169,6 @@
 }
 
 .all-contacts {
-  margin: 50px;
   padding: 50px;
 }
 
@@ -170,10 +176,6 @@
   .phrase2 {
     font-size: large;
     line-height: 40px;
-  }
-
-  .all-contacts {
-    padding: 20px;
   }
 
   .hi {

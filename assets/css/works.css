@@ -13,6 +13,11 @@
   font-style: bold;
 }
 
+body {
+  background-color: rgb(255, 246, 233);
+  margin: 0;
+}
+
 .textGradient {
   color: #ff8c00;
   background: radial-gradient(
@@ -79,6 +84,7 @@
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
+  padding-top: 80px;
 }
 
 .works-style h1 {
